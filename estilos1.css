@@ -1,0 +1,247 @@
+/* Restablecer márgenes, rellenos y establecer el modelo de caja */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Establecer la fuente general de la página */
+body {
+    font-family: "Space Grotesk", sans-serif;
+}
+.contenido-textos h3 { 
+    margin-bottom: 15px; /* Espacio de 15px debajo de cada título */
+}
+
+/* Si deseas que el espacio también se aplique a los párrafos debajo de cada título */
+.contenido-textos p {
+    margin-bottom: 20px; /* Espacio adicional entre párrafos */
+}
+
+/* Estilos del encabezado con fondo y texto centrado */
+/* Estilos del encabezado con fondo y texto centrado */
+header {
+    background: linear-gradient(to right, hsla(198, 56%, 51%, 0.459), hsla(173, 100%, 35%, 0.664)), url(../img/portada1.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    color: #fff;
+    padding: 30px 0; /* Reducir padding para acercar contenido hacia arriba */
+    text-align: center;
+    position: relative;
+}
+
+/* Textos dentro del encabezado */
+.textos-header {
+    margin-top: -20px; /* Ajusta la posición del contenido hacia arriba */
+}
+
+/* Encabezado principal */
+.textos-header h1 {
+    font-size: 50px;
+    margin-bottom: 10px; /* Reducir espacio inferior */
+    transition: transform 0.3s ease;
+}
+
+/* Subtítulo */
+.textos-header h2 {
+    font-size: 25px; /* Opcional: ajustar tamaño */
+    font-weight: 300;
+    margin-bottom: 0; /* Eliminar espacio innecesario */
+    transition: transform 0.3s ease;
+}
+
+/* Contenedor general */
+.contenedor {
+    padding: 40px 0; /* Reducir espacio entre secciones */
+}
+
+
+/* Estilos de la barra de navegación */
+nav {
+    text-align: right; /* Alinea los elementos de navegación a la derecha */
+    padding: 50px 60px 0 0; /* Establece el espaciado interno: 20px arriba, 50px a la derecha, 0px abajo y 0px a la izquierda */
+    position: fixed; /* Fija la barra de navegación en la parte superior de la página al hacer scroll */
+    width: 100%; /* Hace que la barra de navegación ocupe todo el ancho de la página */
+    top: 0; /* Fija la barra en la parte superior de la página */
+    z-index: 1000; /* Asegura que la barra de navegación se quede por encima de otros elementos en la página */
+    background: rgb(34, 189, 171); /* Define el color de fondo de la barra como un color sólido (opaco) */
+    transition: background-color 0.3s ease-in-out; /* Aplica una transición suave al cambiar el color de fondo, con una duración de 0.3 segundos */
+}
+
+/* Estilos para los enlaces de la navegación */
+nav a {
+    color: #fff; /* Color blanco */
+    text-decoration: none; /* Elimina subrayado */
+    margin-right: 15px; /* Espaciado entre enlaces */
+    font-weight: 300; /* Peso de la fuente */
+    padding: 10px 20px; /* Espaciado interno similar a botones */
+    border-radius: 5px; /* Bordes redondeados */
+    background-color: #21d58a; /* Fondo verde para los botones */
+    transition: transform 0.3s ease, background-color 0.3s ease; /* Transiciones suaves */
+}
+
+/* Efecto hover para los enlaces */
+nav a:hover {
+    text-decoration: none; /* Elimina subrayado al pasar el mouse */
+    transform: scale(1.1); /* Aumenta el tamaño del texto al pasar el mouse */
+    background-color: #2c2e2d00; /* Cambia el color de fondo al pasar el mouse */
+}
+
+/* Efecto active (al hacer clic) para los enlaces */
+nav a:active {
+    transform: scale(10); /* Evita el agrandamiento al hacer clic */
+    background-color: #00a461; /* Un color más oscuro al hacer clic */
+}
+
+/* Estilos para el encabezado de la sección del header */
+.textos-header h1 {
+    font-size: 50px; /* Tamaño de fuente grande */
+    transition: transform 0.3s ease; /* Transición para el efecto de agrandado */
+}
+
+/* Efecto hover para el encabezado principal */
+.textos-header h1:hover {
+    transform: scale(1.1); /* Aumenta el tamaño del texto al pasar el mouse */
+}
+
+/* Estilos para el subtítulo de la sección del header */
+.textos-header h2 {
+    font-size: 30px; /* Tamaño de fuente medio */
+    font-weight: 300; /* Peso de la fuente más ligero */
+    transition: transform 0.3s ease; /* Transición para el efecto de agrandado */
+}
+
+/* Efecto hover para el subtítulo */
+.textos-header h2:hover {
+    transform: scale(1.1); /* Aumenta el tamaño del texto al pasar el mouse */
+}
+
+/* Contenedor principal con márgenes y tamaño máximo */
+.contenedor {
+    padding: 60px 0; /* Espaciado interno */
+    width: 90%; /* Ancho del contenedor */
+    max-width: 1000px; /* Ancho máximo */
+    margin: auto; /* Centrado automático */
+}
+
+/* Título principal de la sección */
+.titulo {
+    color: #21d58a; /* Color verde */
+    font-size: 30px; /* Tamaño de fuente */
+    text-align: center; /* Centrado */
+    margin-bottom: 60px; /* Espaciado inferior */
+    transition: transform 0.3s ease; /* Transición para el efecto de agrandado */
+}
+
+/* Efecto hover para el título */
+.titulo:hover {
+    transform: scale(1.1); /* Aumenta el tamaño del texto al pasar el mouse */
+}
+
+/* Estilos para la sección sobre nosotros, con disposición flexible */
+.contenedor-sobre-nosotros {
+    display: flex; /* Disposición flexible */
+    justify-content: space-between; /* Espaciado entre elementos */
+    align-items: flex-start; /* Alineación de los elementos al inicio */
+    flex-wrap: wrap; /* Ajuste de elementos en varias filas si es necesario */
+}
+
+/* Estilos para los textos dentro de la sección sobre nosotros */
+.contenido-textos {
+    width: 48%; /* Ancho de los elementos dentro */
+}
+
+/* Estilo para los números dentro del título de la sección */
+.contenido-textos h3 span {
+    background: #00b39e; /* Fondo verde */
+    color: #fff; /* Texto blanco */
+    border-radius: 50%; /* Forma circular */
+    display: inline-block; /* Bloque en línea */
+    width: 30px; /* Ancho */
+    height: 30px; /* Alto */
+    text-align: center; /* Alinear texto al centro */
+    line-height: 30px; /* Alineación vertical */
+    margin-right: 5px; /* Espaciado a la derecha */
+}
+
+/* Estilos para la imagen de la sección sobre nosotros */
+.imagen-about-us {
+    width: 48%; /* Ancho de la imagen */
+}
+
+/* Estilos del pie de página */
+footer {
+    background: #00b39e; /* Fondo verde */
+    padding: 30px 0; /* Espaciado interno */
+    text-align: center; /* Centrado de texto */
+    color: #fff; /* Texto blanco */
+}
+
+/* Contenedor para los elementos del pie de página */
+.contenedor-footer {
+    display: flex; /* Disposición flexible */
+    justify-content: space-between; /* Espaciado entre los elementos */
+    width: 90%; /* Ancho del contenedor */
+    margin: auto; /* Centrado automático */
+}
+
+/* Estilos de los elementos dentro del pie de página */
+.content-foo {
+    text-align: center; /* Centrado de texto */
+}
+
+/* Títulos dentro del pie de página */
+.content-foo h4 {
+    color: #fff; /* Texto blanco */
+    border-bottom: 3px solid #56d520; /* Línea inferior verde */
+    padding-bottom: 5px; /* Espaciado inferior */
+    margin-bottom: 10px; /* Espaciado inferior */
+}
+
+/* Párrafos dentro del pie de página */
+.content-foo p {
+    color: #ccc; /* Texto gris */
+}
+
+/* Media query para pantallas más pequeñas (máximo 900px) */
+@media (max-width: 900px) {
+    /* Cambiar la disposición de la sección sobre nosotros a columna */
+    .contenedor-sobre-nosotros {
+        flex-direction: column; /* Cambiar la dirección a columna */
+        align-items: center; /* Alinear al centro */
+    }
+    /* Ajustar el tamaño de los elementos dentro */
+    .contenido-textos, .imagen-about-us {
+        width: 90%; /* Ancho del 90% */
+    }
+}
+
+/* Media query para pantallas más pequeñas (máximo 500px) */
+@media (max-width: 500px) {
+    /* Reducir tamaño del título */
+    .textos-header h1 {
+        font-size: 35px; /* Tamaño más pequeño */
+    }
+    /* Reducir tamaño del subtítulo */
+    .textos-header h2 {
+        font-size: 20px; /* Tamaño más pequeño */
+    }
+    /* Ajustar la barra de navegación */
+    nav {
+        text-align: center; /* Centrar texto en la navegación */
+        padding: 20px 0; /* Ajustar espaciado */
+    }
+}
+
+/* Eliminar la línea debajo de los títulos dentro del pie de página */
+.content-foo h4 {
+    color: #fff; /* Texto blanco */
+    border-bottom: none; /* Elimina la línea inferior */
+    padding-bottom: 5px; /* Mantén el espaciado inferior si lo deseas */
+    margin-bottom: 10px; /* Mantén el espaciado inferior si lo deseas */
+}
+
+/* Eliminar el subrayado de los enlaces */
+nav a, .content-foo a {
+    text-decoration: none; /* Elimina el subrayado */
+}

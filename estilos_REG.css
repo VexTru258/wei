@@ -1,0 +1,123 @@
+/* Estilos generales del cuerpo de la página */
+body {
+    font-family: Arial, sans-serif;
+    background: #f3f3f3;
+    margin: 0;
+    padding-top: 80px; /* Asegura que el contenido no quede oculto detrás de la barra de navegación fija */
+    padding-bottom: 100px; /* Añadido para evitar que el pie de página se sobreponga al contenido */
+}
+
+/* Estilos de la caja de contenedor */
+.container {
+    width: 100%;
+    max-width: 400px;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin: 0 auto; /* Centra el contenedor */
+}
+
+/* Estilos de las pestañas para registro e inicio de sesión */
+.tabs {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.tab-button {
+    flex: 1;
+    padding: 10px;
+    background: #ddd;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.tab-button.active {
+    background: #00b39e;
+    color: #fff;
+    font-weight: bold;
+}
+
+/* Estilos de los formularios */
+.form {
+    display: none;
+    flex-direction: column;
+}
+
+.form.active {
+    display: flex;
+}
+
+input {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px;
+    background: #00b39e;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #008f7a;
+}
+
+/* Estilos de la barra de navegación */
+nav {
+    background: linear-gradient(to right, hsla(198, 56%, 51%, 0.459), hsla(173, 100%, 35%, 0.664)), url(../img/portada1.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    color: #fff;
+    padding: 30px 0;
+    text-align: center;
+    position: relative;
+}
+
+/* Estilos de la barra de navegación */
+nav {
+    text-align: right;
+    padding: 50px 60px 0 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    background: rgb(34, 189, 171);
+    transition: background-color 0.3s ease-in-out;
+}
+
+/* Estilos para los enlaces de la navegación */
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 15px;
+    font-weight: 300;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #21d58a;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+/* Efecto hover para los enlaces */
+nav a:hover {
+    text-decoration: none;
+    transform: scale(1.1);
+    background-color: #2c2e2d00;
+}
+
+/* Efecto active (al hacer clic) para los enlaces */
+nav a:active {
+    transform: scale(10);
+    background-color: #00a461;
+}
+
+/* Estilos del pie de página */

@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monitoreo Emocional Estudiantil</title>
+    <link rel="stylesheet" href="ESTILO_FINAL.CSS">
+</head>
+<body>
+
+    <header>
+        
+        <h1>Formulario de Monitoreo Emocional </h1>
+    </header>
+
+    <form id="emociones-form">
+        <!-- Pregunta 1 -->
+        <div class="question-box" id="question1">
+            <label for="estado-emocional">1. ¿Cómo te sientes hoy?</label>
+            <input type="range" id="estado-emocional" name="estado-emocional" min="1" max="10" step="1">
+            <div class="emoji" id="emoji1">😐</div>
+        </div>
+        
+        <!-- Pregunta 2 -->
+        <div class="question-box" id="question2">
+            <label>2. ¿Qué emociones has experimentado en las últimas 24 horas?</label>
+            <div class="response-box">
+                <input type="checkbox" id="feliz" name="emociones" value="feliz" />
+                <label for="feliz" class="animated-button">😀 Feliz</label>
+        
+                <input type="checkbox" id="triste" name="emociones" value="triste" />
+                <label for="triste" class="animated-button">😞 Triste</label>
+        
+                <input type="checkbox" id="ansioso" name="emociones" value="ansioso" />
+                <label for="ansioso" class="animated-button">😰 Ansioso</label>
+        
+                <input type="checkbox" id="estresado" name="emociones" value="estresado" />
+                <label for="estresado" class="animated-button">😫 Estresado</label>
+            </div>
+        </div>
+        
+        <!-- Pregunta 3 -->
+        <div class="question-box" id="question3">
+            <label>3. ¿Te sientes estresado por las tareas o exámenes?</label>
+            <div class="response-box">
+                <input type="radio" id="estresado-si" name="estresado" value="si" />
+                <label for="estresado-si" class="animated-button">Sí 😓</label>
+        
+                <input type="radio" id="estresado-no" name="estresado" value="no" />
+                <label for="estresado-no" class="animated-button">No 😌</label>
+            </div>
+        </div>
+        
+        <!-- Pregunta 4 -->
+        <div class="question-box" id="question4">
+            <label for="concentracion">4. ¿Te cuesta concentrarte en tus estudios?</label>
+            <select id="concentracion" name="concentracion">
+                <option value="facil">Muy fácil 😄</option>
+                <option value="algo-facil">Algo fácil 😅</option>
+                <option value="dificil">Difícil 😖</option>
+                <option value="muy-dificil">Muy difícil 😩</option>
+            </select>
+        </div>
+        
+        <!-- Pregunta 5 -->
+        <div class="question-box" id="question5">
+            <label>5. ¿Te sientes motivado para estudiar?</label>
+            <div class="response-box">
+                <input type="radio" id="motivacion-si" name="motivacion" value="si" />
+                <label for="motivacion-si" class="animated-button">Sí 😃</label>
+        
+                <input type="radio" id="motivacion-no" name="motivacion" value="no" />
+                <label for="motivacion-no" class="animated-button">No 😔</label>
+            </div>
+        </div>
+        
+        <!-- Pregunta 6 -->
+        <div class="question-box" id="question6">
+            <label>6. ¿Tienes problemas para dormir debido al estrés?</label>
+            <div class="response-box">
+                <input type="radio" id="dormir-si" name="dormir" value="si" />
+                <label for="dormir-si" class="animated-button">Sí 😴</label>
+        
+                <input type="radio" id="dormir-no" name="dormir" value="no" />
+                <label for="dormir-no" class="animated-button">No 🛏️</label>
+            </div>
+        </div>
+        
+        <!-- Pregunta 7 -->
+        <div class="question-box" id="question7">
+            <label>7. ¿Sientes que tu carga laboral o escolar es excesiva?</label>
+            <div class="response-box">
+                <input type="radio" id="carga-si" name="carga" value="si" />
+                <label for="carga-si" class="animated-button">Sí 😩</label>
+        
+                <input type="radio" id="carga-no" name="carga" value="no" />
+                <label for="carga-no" class="animated-button">No 😌</label>
+            </div>
+        </div>
+        
+        <!-- Pregunta 8 -->
+        <div class="question-box" id="question8">
+            <label>8. ¿Sientes que no tienes tiempo para ti mismo/a?</label>
+            <div class="response-box">
+                <input type="radio" id="tiempo-no" name="tiempo" value="no" />
+                <label for="tiempo-no" class="animated-button">Sí ⏳</label>
+        
+                <input type="radio" id="tiempo-si" name="tiempo" value="si" />
+                <label for="tiempo-si" class="animated-button">No 🕰️</label>
+            </div>
+        </div>
+        
+        <!-- Pregunta 9 -->
+        <div class="question-box" id="question9">
+            <label>9. ¿Te sientes agotado/a al final del día?</label>
+            <div class="response-box">
+                <input type="radio" id="agotado-si" name="agotado" value="si" />
+                <label for="agotado-si" class="animated-button">Sí 🥱</label>
+        
+                <input type="radio" id="agotado-no" name="agotado" value="no" />
+                <label for="agotado-no" class="animated-button">No 💪</label>
+            </div>
+        </div>
+        
+        <!-- Pregunta 10 -->
+        <div class="question-box" id="question10">
+            <label>10. ¿Te preocupas constantemente por tu futuro?</label>
+            <div class="response-box">
+                <input type="radio" id="preocupacion-si" name="preocupacion" value="si" />
+                <label for="preocupacion-si" class="animated-button">Sí 😟</label>
+        
+                <input type="radio" id="preocupacion-no" name="preocupacion" value="no" />
+                <label for="preocupacion-no" class="animated-button">No 😌</label>
+            </div>
+        </div>
+        
+        <!-- Pregunta 11 -->
+        <div class="question-box" id="question11">
+            <label>11. ¿Cómo calificas tu nivel de satisfacción con tu vida actualmente?</label>
+            <select id="satisfaccion" name="satisfaccion">
+                <option value="muy-alto">Muy alto 😊</option>
+                <option value="alto">Alto 😄</option>
+                <option value="medio">Medio 😐</option>
+                <option value="bajo">Bajo 😞</option>
+                <option value="muy-bajo">Muy bajo 😔</option>
+            </select>
+        </div>
+        
+        <!-- Pregunta 12 -->
+        <div class="question-box" id="question12">
+            <label>12. ¿Tienes dificultades para relajarte?</label>
+            <div class="response-box">
+                <input type="radio" id="relajarse-si" name="relajarse" value="si" />
+                <label for="relajarse-si" class="animated-button">Sí 😓</label>
+        
+                <input type="radio" id="relajarse-no" name="relajarse" value="no" />
+                <label for="relajarse-no" class="animated-button">No 😌</label>
+            </div>
+        </div>
+        
+        <!-- Pregunta 13 -->
+        <div class="question-box" id="question13">
+            <label>13. ¿Tienes apoyo social para enfrentar el estrés?</label>
+            <div class="response-box">
+                <input type="radio" id="apoyo-si" name="apoyo" value="si" />
+                <label for="apoyo-si" class="animated-button">Sí 👫</label>
+        
+                <input type="radio" id="apoyo-no" name="apoyo" value="no" />
+                <label for="apoyo-no" class="animated-button">No 🙁</label>
+            </div>
+        </div>
+        
+        <!-- Pregunta 14 -->
+        <div class="question-box" id="question14">
+            <label>14. ¿Practicas alguna actividad física para reducir el estrés?</label>
+            <div class="response-box">
+                <input type="radio" id="actividad-si" name="actividad" value="si" />
+                <label for="actividad-si" class="animated-button">Sí 🏃‍♂️</label>
+        
+                <input type="radio" id="actividad-no" name="actividad" value="no" />
+                <label for="actividad-no" class="animated-button">No 🧘‍♀️</label>
+            </div>
+        </div>
+        
+        <!-- Pregunta 15 -->
+        <div class="question-box" id="question15">
+            <label>15. ¿Qué tanto consideras importante tu bienestar emocional?</label>
+            <div class="response-box">
+                <input type="radio" id="bienestar-alto" name="bienestar" value="alto" />
+                <label for="bienestar-alto" class="animated-button">Alto 😊</label>
+        
+                <input type="radio" id="bienestar-bajo" name="bienestar" value="bajo" />
+                <label for="bienestar-bajo" class="animated-button">Bajo 🙁</label>
+            </div>
+        </div>
+        
+        
+       <!-- Botón Enviar -->
+<button type="button" id="nextButton" onclick="nextQuestion()">Enviar</button>
+
+<div id="resultado" class="result-box" style="display: none;">
+    <h2>Resultado:</h2>
+    <p id="resultado-texto"></p>
+
+    <!-- Botón Regresar después del resultado -->
+    <button id="regresarButton" style="background-color: #28a745; color: white; padding: 15px; border: none; border-radius: 5px; cursor: pointer; font-size: 1.2rem; margin-top: 20px;">Regresar</button>
+
+<script>
+    // Agregar un evento de clic al botón para redirigir a "avance2.html"
+    document.getElementById('regresarButton').addEventListener('click', function() {
+        window.location.href = 'avance2.html';
+    });
+</script>
+    <script>
+        // Redirige a la página avance2.html
+        function goToNextPage() {
+            window.location.href = 'avance2.html';
+        }
+    
+        // Tu código de lógica de la encuesta puede ir aquí.
+        let currentQuestion = 1;
+        const totalQuestions = 15;
+        const responses = [];
+    
+        function nextQuestion() {
+            if (currentQuestion <= totalQuestions) {
+                document.getElementById(`question${currentQuestion}`).classList.remove('active');
+                responses.push(getResponse(currentQuestion));
+                currentQuestion++;
+    
+                if (currentQuestion <= totalQuestions) {
+                    document.getElementById(`question${currentQuestion}`).classList.add('active');
+                } else {
+                    showResults();
+                }
+            }
+        }
+    
+        function getResponse(questionId) {
+            const questionElement = document.getElementById(`question${questionId}`);
+            const inputs = questionElement.querySelectorAll("input, select");
+            let response = {};
+    
+            inputs.forEach(input => {
+                if ((input.type === 'checkbox' || input.type === 'radio') && input.checked) {
+                    response[input.name] = input.value;
+                }
+            });
+    
+            return response;
+        }
+    
+        function showResults() {
+            let score = calculateStressLevel(responses);
+            let resultText = `Tu nivel de estrés es: ${score}% `;
+            resultText += getAdvice(score);  // Mostrar consejos según el puntaje
+    
+            document.getElementById('resultado-texto').textContent = resultText;
+            document.getElementById('resultado').style.display = 'block';
+            document.getElementById('nextButton').style.display = 'none';  // Ocultar el botón Enviar después de los resultados
+        }
+    
+        function calculateStressLevel(responses) {
+            let score = 0;
+            responses.forEach(response => {
+                if (response['estado-emocional']) score += parseInt(response['estado-emocional']);
+                if (response['emociones'] && response['emociones'].includes('estresado')) score += 20;
+                if (response['estresado'] === 'si') score += 20;
+                if (response['concentracion'] === 'dificil') score += 15;
+                if (response['motivacion'] === 'no') score += 10;
+            });
+            return Math.min(score, 100);  // Asegurarse de que el puntaje no supere el 100%
+        }
+    
+        function getAdvice(score) {
+            let advice = '';
+            if (score >= 90) {
+                advice = "Consejo: Es importante que busques apoyo profesional para gestionar el estrés de manera efectiva.";
+            } else if (score >= 70) {
+                advice = "Consejo: Toma pequeños descansos durante el día y prioriza tus tareas.";
+            } else if (score >= 50) {
+                advice = "Consejo: Trata de practicar actividades relajantes como meditación o respiración profunda.";
+            } else if (score >= 30) {
+                advice = "Consejo: Mantén una rutina de sueño regular y haz ejercicio para reducir la ansiedad.";
+            } else {
+                advice = "Consejo: Estás manejando bien el estrés, sigue con las estrategias que te han funcionado.";
+            }
+            return advice;
+        }
+    
+        // Activar la primera pregunta
+        document.getElementById('question1').classList.add('active');
+    </script>
+    

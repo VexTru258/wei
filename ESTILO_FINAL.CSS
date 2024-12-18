@@ -1,0 +1,129 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+header h1 {
+    text-align: center;
+    color: #333;
+}
+
+form {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+}
+
+.question-box {
+    display: none;
+    margin-bottom: 20px;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.question-box.active {
+    display: block;
+    opacity: 1;
+}
+
+.emoji {
+    font-size: 40px;
+    text-align: center;
+}
+
+.response-box {
+    display: flex;
+    flex-direction: column;
+}
+
+button {
+    background-color: #28a745;
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+.result-box {
+    background-color: #d4edda;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+#resultado {
+    display: none;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+footer {
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* Botón animado */
+.animated-button {
+    padding: 10px 20px;
+    margin: 5px;
+    border: 2px solid #008CBA;
+    background-color: #008CBA;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    z-index: 1; /* Coloca este botón sobre otros elementos */
+}
+
+.animated-button:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 4px 20px rgba(0, 140, 186, 0.5);
+}
+
+.animated-button:active {
+    transform: scale(0.95);
+    box-shadow: 0px 4px 20px rgba(0, 140, 186, 0.7);
+}
+
+.animated-button:focus {
+    outline: none;
+    border-color: #005f73;
+}
+
+/* Botón invisible */
+.invisible-button {
+    padding: 10px 20px;
+    margin: 5px;
+    border: 2px solid transparent;
+    background-color: transparent;
+    color: transparent;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 12px;
+    cursor: pointer;
+    position: absolute;
+    opacity: 0; /* Hace que el botón sea invisible */
+    visibility: hidden; /* Evita que el botón sea interactuable */
+    z-index: -1; /* Asegura que el botón invisible esté por debajo */
+}
